@@ -15,6 +15,18 @@ document.getElementById("Contact-Form").onsubmit = () => {
         isValid = false;
     }
 
+    let mdate = document.getElementById("date").value.trim();
+    if (mdate === "") {
+        document.getElementById("err-date").style.display = "block";
+        isValid = false;
+    }
+
+    let mtime = document.getElementById("time").value.trim();
+    if (mtime === "") {
+        document.getElementById("err-time").style.display = "block";
+        isValid = false;
+    }
+
     return isValid;
 };
 
