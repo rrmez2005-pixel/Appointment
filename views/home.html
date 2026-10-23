@@ -13,35 +13,39 @@
 
 </head>
 <body>
-    <form id="Contact-Form" action="#" method="get">
+    <form action="/submit-appointment" method="post">
         <h1>Appointment Scheduler</h1>
 
-        <div>
-            <label for="fname"><strong>First Name</strong></label>
-            <input type="text" id ="fname" name="fname">
-            <span class="err" id="err-fname">First name is required</span>
-        </div>
+        <div class="mainbody">
+            <div class="fields">
+                <label for="fname"><strong>First Name</strong></label>
+                <input type="text" id ="fname" name="fname">
+                <span class="err" id="err-fname">First name is required</span>
+            </div>
 
-        <div>
-            <label for="lname"><strong>Last Name</strong></strng></label>
-            <input type="text" id ="lname" name="lname">
-            <span class="err" id="err-lname">Last name is required</span>
-        </div>
+            <div class="fields">
+                <label for="lname"><strong>Last Name</strong></strng></label>
+                <input type="text" id ="lname" name="lname">
+                <span class="err" id="err-lname">Last name is required</span>
+            </div>
 
-        <div>
-            <label for="mdate"><strong>Meeting Date</strong></label>
-            <input type="text" id ="mdate" name="mdate">
-            <span class="err" id="err-mdate">Meeting Date is required</span>
-        </div>
+            <div class="fields">
+                <label for="mdate"><strong>Meeting Date</strong></label>
+                <input type="date" id ="mdate" name="mdate">
+                <span class="err" id="err-mdate">Meeting Date is required</span>
+            </div>
 
-        <div>
-            <label for="mtime"><strong>Meeting Time</strong></label>
-            <input type="text" id ="mtime" name="mtime">
-            <span class="err" id="err-mtime">Meeting Time is required</span>
+            <div class="fields">
+                <label for="mtime"><strong>Meeting Time</strong></label>
+                <input type="time" id ="mtime" name="mtime">
+                <span class="err" id="err-mtime">Meeting Time is required</span>
+            </div>
         </div>
 
          <!-- Book Appointment Button -->
-         <button type="submit">Book Appointment</button>
+        <div class="book">
+            <button type="submit">Book Appointment</button>
+        </div>
     </form>
 </body>
 </html>
