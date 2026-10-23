@@ -6,43 +6,42 @@
     <title>Appointment Scheduler</title>
 
     <!--Stylesheet-->
-    <link rel="stylesheet" href = "styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
     <!-- JavaScript -->
     <script src="scripts/appointment.js" defer></script>
-
 </head>
 <body>
-    <form action="/submit-appointment" method="post">
+    <form id="Contact-Form" action="/submit-appointment" method="post">
         <h1>Appointment Scheduler</h1>
 
         <div class="mainbody">
             <div class="fields">
                 <label for="fname"><strong>First Name</strong></label>
-                <input type="text" id ="fname" name="fname">
+                <input type="text" id="fname" name="fname">
                 <span class="err" id="err-fname">First name is required</span>
             </div>
 
             <div class="fields">
-                <label for="lname"><strong>Last Name</strong></strng></label>
-                <input type="text" id ="lname" name="lname">
+                <label for="lname"><strong>Last Name</strong></label>
+                <input type="text" id="lname" name="lname">
                 <span class="err" id="err-lname">Last name is required</span>
             </div>
 
             <div class="fields">
-                <label for="mdate"><strong>Meeting Date</strong></label>
-                <input type="date" id ="mdate" name="mdate">
-                <span class="err" id="err-mdate">Meeting Date is required</span>
+                <label for="date"><strong>Meeting Date</strong></label>
+                <input type="date" id="date" name="date">
+                <span class="err" id="err-date">Meeting Date is required</span>
             </div>
 
             <div class="fields">
-                <label for="mtime"><strong>Meeting Time</strong></label>
-                <input type="time" id ="mtime" name="mtime">
-                <span class="err" id="err-mtime">Meeting Time is required</span>
+                <label for="time"><strong>Meeting Time</strong></label>
+                <input type="time" id="time" name="time">
+                <span class="err" id="err-time">Meeting Time is required</span>
             </div>
         </div>
 
-         <!-- Book Appointment Button -->
+        <!-- Book Appointment Button -->
         <div class="book">
             <button type="submit">Book Appointment</button>
         </div>

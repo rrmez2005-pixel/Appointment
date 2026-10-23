@@ -5,8 +5,8 @@ const PORT = 3003;
 
 const appointments = [];
 
-app.use(express.static('public'));
 
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
@@ -17,7 +17,7 @@ app.get('/confirm', (req, res) => {
   res.sendFile(`${import.meta.dirname}/views/confirm.html`);
 });
 
-app.post('/submit-appointment', (req, res) => {
+app.post('/submit-appointment', (req, res) =>  {
   console.log(req.body);
 
   const appointment = {
@@ -38,6 +38,6 @@ app.get('/admin', (req, res) => {
   res.send(appointments);
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, () =>  {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
